@@ -1,6 +1,14 @@
 const bodyE1 = document.querySelector("body")
+const buttonE1 = document.querySelector("button")
+const card = document.querySelector(".card")
 
-bodyE1.addEventListener('mousemove', (event)=>{
+buttonE1.addEventListener('click', (event)=>{
+    buttonE1.classList.add("hidden")
+    card.classList.remove("hidden")
+    
+})
+
+card.addEventListener('mousemove', (event)=>{
     const xpos = event.offsetX
     const ypos = event.offsetY
 
